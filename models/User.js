@@ -29,7 +29,6 @@ const userSchema = mongoose.Schema({
     token: {
         type: String
     },
-    // tokenExp : token's available time limit
     tokenExp: {
         type: Number
     }
@@ -67,7 +66,7 @@ userSchema.methods.comparePassword = function(plainPassword, cb) {
 userSchema.methods.generateToken = function(cb) {
     var user = this;
     // create a token using jsonwebtoken
-    var token = jwt.sign(user._id.toHexString(), 'sectretToken')
+    var token = jwt.sign(user._id.toHexString(), 'secretToken')
     // user._id + 'secretToken' = token
     // ->
     // 'sectretToken' -> user._id

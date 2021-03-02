@@ -1,4 +1,4 @@
-const { User } = require("../models/User");
+const { User } = require('../models/User');
 
 let auth = (req, res, next) => {
     // step1: get a token from client cookies
