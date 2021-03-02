@@ -1,2 +1,2 @@
 # boiler-plate
-## This page is for web development
+## for web development

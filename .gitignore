@@ -4,5 +4,4 @@ dev.js
 # git add . : add all the files in working dir. to the staging area
 # git status : show files in staging area (potential files to be added to the git)
 # git commit -m "message" : make a commit locally
-# git pull --rebase origin main : uploading to the github (step1)
-# git push origin main : step 2
+# git push -u origin main
