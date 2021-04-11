@@ -13,6 +13,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
+app.get('/api/hello', (req, res)=>{
+    res.send("hello hello")
+})
+
 const mongoose = require('mongoose')
 mongoose.connect(config.mongoURI, {
     useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
